@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.home.HomeFragment">
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/app.bar.main"
+        android:background="@drawable/main_app_bar"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            style="@style/TextView"
+            android:layout_gravity="center_vertical"
+            android:layout_marginHorizontal="@dimen/margin16"
+            android:text="@string/app_name"
+            android:textColor="@color/white"
+            android:textSize="@dimen/text.title"
+            android:layout_weight="1"
+            android:layout_width="0dp" />
+
+        <ImageView
+            android:id="@+id/main.btn.add.car"
+            style="@style/IconImageButton"
+            android:layout_gravity="center_vertical"
+            android:contentDescription="@string/app_name"
+            android:src="@drawable/ic_add_car"
+            app:tint ="@color/blue.azure"/>
+
+        <ImageView
+            android:id="@+id/main.btn.exit"
+            android:layout_width="@dimen/icon.image.button"
+            android:layout_height="@dimen/icon.image.button"
+            android:layout_gravity="center_vertical"
+            android:layout_marginHorizontal="@dimen/margin16"
+            android:src="@drawable/logout" />
+
+    </LinearLayout>
+
+    <TableRow
+        android:id="@+id/tableRow"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="@dimen/margin8"
+        android:layout_marginTop="@dimen/margin8"
+        android:background="@color/grey.titanium"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout">
+
+        <TextView
+            style="@style/TextView"
+            android:layout_width="94dp"
+            android:background="@drawable/border_table"
+            android:gravity="center"
+            android:padding="@dimen/margin5"
+            android:text="@string/table.mark" />
+
+        <TextView
+            style="@style/TextView"
+            android:layout_width="100dp"
+            android:background="@drawable/border_table"
+            android:gravity="center"
+            android:padding="@dimen/margin5"
+            android:text="@string/table.model" />
+
+        <TextView
+            style="@style/TextView"
+            android:layout_width="100dp"
+            android:background="@drawable/border_table"
+            android:gravity="center_horizontal"
+            android:padding="@dimen/margin5"
+            android:text="@string/table.date" />
+
+        <TextView
+            style="@style/TextView"
+            android:layout_width="100dp"
+            android:background="@drawable/border_table"
+            android:gravity="center_horizontal"
+            android:padding="@dimen/margin5"
+            android:text="@string/table.price" />
+
+    </TableRow>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/main.recycler.view"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginBottom="@dimen/margin8"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tableRow" />
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

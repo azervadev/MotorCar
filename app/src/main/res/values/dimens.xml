@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <dimen name="text.app">36sp</dimen>
+    <dimen name="text.title">24sp</dimen>
+    <dimen name="text">16sp</dimen>
+    <dimen name="text.button">18sp</dimen>
+    <dimen name="text.small">12sp</dimen>
+
+    <dimen name="margin5">5dp</dimen>
+    <dimen name="margin8">8dp</dimen>
+    <dimen name="margin16">16dp</dimen>
+    <dimen name="margin24">24dp</dimen>
+    <dimen name="margin32">32dp</dimen>
+
+
+    <dimen name="app.bar.main">100dp</dimen>
+
+    <dimen name="icon.image.button">24dp</dimen>
+
+
+</resources>

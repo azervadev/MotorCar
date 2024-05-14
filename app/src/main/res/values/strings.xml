@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">MotorCar</string>
+    <string name="btn.access.app"><b><i>MotorCar Access</i></b></string>
+
+    <string name="table.mark"><b>Mark</b></string>
+    <string name="table.model"><b>Model</b></string>
+    <string name="table.date"><b>Date</b></string>
+    <string name="table.price"><b>Price</b></string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+</resources>

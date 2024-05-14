@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+
+
+    <color name="blue.azure">#007FFF</color>
+    <color name="blue.sapphire">#0F52BA</color>
+    <color name="blue.cobalt">#0047AB</color>
+    <color name="blue.indigo">#4B0082</color>
+    <color name="blue.deep">#08088A</color>
+
+    <color name="grey.titanium">#C0C0C0</color>
+    <color name="grey.gunmetal">#848482</color>
+    <color name="silver.platinum">#E5E4E2</color>
+
+
+</resources>

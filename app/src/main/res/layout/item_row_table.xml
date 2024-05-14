@@ -1,0 +1,50 @@
+<!-- item_header_table.xml -->
+<TableRow xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginHorizontal="@dimen/margin8"
+    android:id="@+id/row.table">
+
+    <TextView
+        android:id="@+id/row.brand"
+        style="@style/TextView"
+        tools:text="@string/table.mark"
+        android:layout_width="94dp"
+        android:textSize="@dimen/text.small"
+        android:padding="@dimen/margin5"
+        android:background="@drawable/border_table"
+        android:gravity="center"/>
+
+    <TextView
+        android:id="@+id/row.model"
+        style="@style/TextView"
+        tools:text="@string/table.model"
+        android:layout_width="100dp"
+        android:textSize="@dimen/text.small"
+
+        android:gravity="center"
+        android:padding="@dimen/margin5"
+        android:background="@drawable/border_table"/>
+    <TextView
+        android:id="@+id/row.date"
+        style="@style/TextView"
+        android:layout_width="100dp"
+        android:textSize="@dimen/text.small"
+
+        android:gravity="center_horizontal"
+        tools:text="@string/table.date"
+        android:padding="@dimen/margin5"
+        android:background="@drawable/border_table"/>
+    <TextView
+        android:id="@+id/row.price"
+        style="@style/TextView"
+        android:layout_width="100dp"
+        android:textSize="@dimen/text.small"
+
+        tools:text="@string/table.price"
+        android:gravity="center_horizontal"
+        android:padding="@dimen/margin5"
+        android:background="@drawable/border_table"/>
+
+</TableRow>

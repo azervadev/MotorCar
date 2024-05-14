@@ -1,0 +1,222 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".ui.label_car.CarLabelFragment"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/app.bar.main"
+        android:background="@drawable/main_app_bar">
+
+        <ImageButton
+            android:id="@+id/main.btn.back"
+            style="@style/IconImageButton"
+            android:layout_gravity="center_vertical"
+            android:contentDescription="@string/app_name"
+            android:src="@drawable/ic_back" />
+
+        <TextView
+            style="@style/TextView"
+            android:layout_gravity="center_vertical"
+            android:layout_marginHorizontal="@dimen/margin16"
+            android:text="@string/app_name"
+            android:textColor="@color/white"
+            android:textSize="@dimen/text.title"
+            android:layout_weight="1"
+            android:layout_width="0dp" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="@dimen/margin16"
+            android:layout_gravity="center_vertical">
+            <ImageView
+                android:id="@+id/main.btn.save.car"
+                android:layout_width="@dimen/icon.image.button"
+                android:layout_height="@dimen/icon.image.button"
+                android:layout_gravity="center_vertical"
+                android:layout_marginHorizontal="@dimen/margin5"
+                android:src="@drawable/save"
+                android:scaleType="fitXY"/>
+
+            <ImageView
+                android:id="@+id/main.btn.update.car"
+                android:layout_width="@dimen/icon.image.button"
+                android:layout_height="@dimen/icon.image.button"
+                android:layout_gravity="center_vertical"
+                android:layout_marginHorizontal="@dimen/margin5"
+                android:src="@drawable/update"
+                android:scaleType="fitXY"/>
+
+            <ImageView
+                android:id="@+id/main.btn.delete.car"
+                android:layout_width="@dimen/icon.image.button"
+                android:layout_height="@dimen/icon.image.button"
+                android:layout_gravity="center_vertical"
+                android:layout_marginHorizontal="@dimen/margin5"
+                android:src="@drawable/delete"
+                android:scaleType="fitXY"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+   <LinearLayout
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       android:layout_marginTop="@dimen/margin16"
+       android:layout_marginBottom="@dimen/margin5"
+       android:layout_marginHorizontal="@dimen/margin16">
+
+       <TextView
+           style="@style/TextView"
+           android:text="Brand"
+           android:layout_width="120dp" />
+
+       <EditText
+           android:id="@+id/et.brand"
+           style="@style/EditText"
+           android:layout_marginStart="@dimen/margin16"
+           android:layout_weight="1"
+           android:hint="Brand"/>
+
+   </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/margin16"
+        android:layout_marginBottom="@dimen/margin5"
+        android:layout_marginHorizontal="@dimen/margin16">
+
+        <TextView
+            style="@style/TextView"
+            android:text="Model"
+            android:layout_width="120dp" />
+
+        <EditText
+            android:id="@+id/et.model"
+            style="@style/EditText"
+            android:layout_marginStart="@dimen/margin16"
+            android:layout_weight="1"
+            android:hint="Model"/>
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/margin16"
+        android:layout_marginBottom="@dimen/margin5"
+        android:layout_marginHorizontal="@dimen/margin16">
+
+        <TextView
+            style="@style/TextView"
+            android:text="Kilometers"
+            android:layout_width="120dp" />
+
+        <EditText
+            android:id="@+id/et.Kilometers"
+            style="@style/EditText"
+            android:layout_marginStart="@dimen/margin16"
+            android:layout_weight="1"
+            android:hint="Kilometers"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/margin16"
+        android:layout_marginBottom="@dimen/margin5"
+        android:layout_marginHorizontal="@dimen/margin16">
+
+        <TextView
+            style="@style/TextView"
+            android:text="Date"
+            android:layout_width="120dp" />
+
+        <EditText
+            android:id="@+id/et.date"
+            style="@style/EditText"
+            android:layout_marginStart="@dimen/margin16"
+            android:layout_weight="1"
+            android:hint="Date"/>
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/margin16"
+        android:layout_marginBottom="@dimen/margin5"
+        android:layout_marginHorizontal="@dimen/margin16">
+
+        <TextView
+            style="@style/TextView"
+            android:text="CC"
+            android:layout_width="120dp" />
+
+        <EditText
+            android:id="@+id/et.cc"
+            style="@style/EditText"
+            android:layout_marginStart="@dimen/margin16"
+            android:layout_weight="1"
+            android:hint="CC"/>
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/margin16"
+        android:layout_marginBottom="@dimen/margin5"
+        android:layout_marginHorizontal="@dimen/margin16">
+
+        <TextView
+            style="@style/TextView"
+            android:text="CV"
+            android:layout_width="120dp" />
+
+        <EditText
+            android:id="@+id/et.cv"
+            style="@style/EditText"
+            android:layout_marginStart="@dimen/margin16"
+            android:layout_weight="1"
+            android:hint="CV"/>
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/margin16"
+        android:layout_marginBottom="@dimen/margin5"
+        android:layout_marginHorizontal="@dimen/margin16">
+
+        <TextView
+            style="@style/TextView"
+            android:text="Price"
+            android:layout_width="120dp" />
+
+        <EditText
+            android:id="@+id/et.price"
+            style="@style/EditText"
+            android:layout_marginStart="@dimen/margin16"
+            android:layout_weight="1"
+            android:hint="Price"/>
+
+    </LinearLayout>
+
+
+
+    <CheckBox
+        android:id="@+id/label.is.sold"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Sold"
+        android:gravity="center_vertical"
+        android:layout_gravity="end"
+        android:layout_marginHorizontal="@dimen/margin16"/>
+
+</LinearLayout>
